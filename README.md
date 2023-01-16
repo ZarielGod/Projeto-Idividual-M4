@@ -37,7 +37,7 @@ Os principais campos são o ID de cada entidade, ou seja, as chaves primárias. 
 <h3> Como essas entidades estão relacionadas? </h3>
 
 ```sh
-De uma pra muitas, de muitas pra muitas.
+De Acordo com a Ligação de uma com a outra.
 
 ```
 <div align='center'>
