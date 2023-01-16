@@ -8,8 +8,6 @@ acompanhamento de dados da Resilia, e para isso precisa-se modelar um
 banco de dados que vai armazenar seus cursos, turmas e alunos.
 
 ![img projeto M4](https://user-images.githubusercontent.com/114095005/212759617-a19fce08-4e6c-4ff9-beb4-d41aa4957f19.png)
-
-![Diagrama Modelagem de Dados](https://user-images.githubusercontent.com/112362301/208192321-f2f84873-7de1-4e64-baab-b52a4a4f60f2.png)
 <br>
  Modelo para Modelagem de Dados no Workbench.
  <br>
