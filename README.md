@@ -18,10 +18,11 @@ banco de dados que vai armazenar seus cursos, turmas e alunos.
  <h3> Existem outras entidades além dessas três? </h3>
 
 ```sh
-Sim, foram acrescentadas mais 2 entidades, sendo elas:
+Sim, foram acrescentadas mais 3 entidades, sendo elas:
 
-1. Professores (Facilitadores);
-2. Diciplinas.
+1. Professores;
+2. Diciplinas;
+3. Sala
 
 
 ```
