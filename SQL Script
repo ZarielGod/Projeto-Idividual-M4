@@ -1,0 +1,64 @@
+table Curso {
+  id_curso INT [pk, not null, increment] 
+  nome Varchar(100)
+  sigla Varchar(5)
+  duracao tinyint
+  tipo_duracao enum (...)
+  periodo Enum (...)
+  Data_inicio date
+  id_diciplina int [ref: > diciplina.id_diciplina] 
+}
+
+table diciplina{
+  id_diciplina int [pk, not null, increment] 
+  nome varchar (45)
+  sigla  varchar (5)
+  semestre varchar (45)
+  aulas_semana INT 
+  Aulas_Total INT
+  Area carchar (45)
+  curso_id INT
+} 
+ 
+table  Aluno{
+  id_Aluno Int 
+  Prontuario Int
+  nome varchar (100)
+  Data_nascimento date
+  Matricula varchar (50)
+  CPF Varchar (50)
+  Telefone Varchar (45)
+  id_curso int [ref: > Curso.id_curso]
+  id_diciplina int [ref: > diciplina.id_diciplina]
+}
+
+table turma {
+  id_turma int
+  codigo Varchar (50)
+  id_Aluno int [ref: > Aluno.id_Aluno]
+}
+
+Table sala {
+  id_sala int 
+  
+}
+
+Table professores {
+id_professores int
+Prontuario int
+nome Varchar (100)
+materia Varchar (50)
+Telefone Varchar (20)
+CPF varchar (45)
+Data_nascimento varchar (45)
+email varchar (100)
+}
+
+
+
+Table turma_Sala {
+  id_turma_Sala int
+  id_turma int [ref: > turma.id_turma]
+  id_sala int [ref: > sala.id_sala]
+}
+
