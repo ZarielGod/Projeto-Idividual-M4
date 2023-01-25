@@ -40,6 +40,12 @@ table turma {
 
 Table sala {
   id_sala int 
+  Tipo Varchar (45)
+  Computadores int
+  Projetor tinyint
+  lousa_digital tinyint
+  bloco Varchar (45)
+  Andar Varchar (45)
   
 }
 
@@ -55,10 +61,35 @@ email varchar (100)
 }
 
 
+/*Relações*/
 
-Table turma_Sala {
+Table sala_turma {
   id_turma_Sala int
   id_turma int [ref: > turma.id_turma]
   id_sala int [ref: > sala.id_sala]
+}
+
+table aluno_diciplina {
+  id_aluno_diciplina int
+  id_Aluno int [ref: > Aluno.id_Aluno]
+  id_diciplina int [ref: > diciplina.id_diciplina]
+}
+
+table aluno_turma {
+  id_aluno_turma int
+  id_Aluno int [ref: > Aluno.id_Aluno]
+  id_turma int [ref: > turma.id_turma]
+}
+
+table professores_turma {
+  id_professores_turma int
+  id_professores int [ref: > professores.id_professores]
+  id_turma int [ref: > turma.id_turma]
+}
+
+table aluno_curso {
+  id_aluno_curso int
+  id_Aluno int [ref: > Aluno.id_Aluno]
+  id_curso int [ref: > Curso.id_curso]
 }
 
